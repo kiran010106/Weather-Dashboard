@@ -11,7 +11,7 @@ const SearchBar: React.FC = () => {
             <input
               className="form-control me-2 "
               type="search"
-            //   placeholder="Search for your preffered city..."
+              placeholder="Search for your preffered city..."
               aria-label="Search"
             />
           </div>

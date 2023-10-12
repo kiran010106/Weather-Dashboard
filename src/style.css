@@ -15,10 +15,14 @@
   margin-top: 4rem;
   width: 60rem;
   height: 3.5rem;
+  right: 10%;
   border-radius: 40px;
   background: #444;
   border: none;
   box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.25);
+}
+.search-input .form-control {
+  padding: 0.375rem 3.75rem !important;
 }
 
 .search-icon {
@@ -181,8 +185,8 @@
   /* background: url(./assets/clear\ 1.png), lightgray 50% / cover no-repeat; */
 }
 .weather-details .clear-name {
-  margin-left: -6%;
-  margin-top: -4%;
+  margin-left: -8%;
+  margin-top: -5%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -196,8 +200,8 @@
   line-height: normal;
 }
 .weather-details .humidity {
-  margin-left: 70%;
-  margin-top: -35%;
+  margin-left: 67%;
+  margin-top: -38%;
 }
 .weather-details .humidity-img {
   position: absolute;
@@ -215,7 +219,94 @@
   line-height: normal;
 }
 .weather-details .humidity-name {
-    margin-right: 70%; 
+  margin-right: 70%;
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.weather-details .wind {
+  margin-left: 85%;
+  margin-top: -15%;
+}
+.weather-details .wind-img {
+  position: absolute;
+  transform: scale(1.2, 1);
+}
+.weather-details .wind-value {
+  margin-top: 56%;
+  margin-right: 35%;
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.weather-details .wind-name {
+  margin-right: 20%;
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.weather-details .pressure {
+  margin-left: 66%;
+  margin-top: 3%;
+}
+.weather-details .pressure-img {
+  position: absolute;
+  transform: scale(1.2, 1);
+}
+.weather-details .pressure-value {
+  margin-top: 25%;
+  margin-right: 75%;
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.weather-details .pressure-name {
+  margin-right: 75%;
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.weather-details .uv {
+  margin-left: 85%;
+  margin-top: -15%;
+}
+.weather-details .uv-img {
+  position: absolute;
+  transform: scale(1.2, 1);
+}
+.weather-details .uv-value {
+  margin-top: 56%;
+  margin-right: 50%;
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.weather-details .uv-name {
+  margin-right: 50%;
   color: #fff;
   text-align: center;
   font-family: Poppins;

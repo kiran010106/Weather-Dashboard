@@ -38,21 +38,21 @@ const WeatherDetails = () => {
         <span className="humidity-value">41%</span>
         <span className="humidity-name">Humidity</span>
       </div>
-      {/* <div>
-      <img src={Wind} alt="" />
-        <span></span>
-        <span></span>
+      <div className="d-flex flex-column wind">
+      <img className="wind-img" src={Wind} alt="" />
+        <span className="wind-value">2km/h</span>
+        <span className="wind-name">Wind Speed</span>
       </div>
-      <div>
-      <img src={Pressure} alt="" />
-        <span></span>
-        <span></span>
+      <div className="d-flex flex-column pressure">
+      <img className="pressure-img" src={Pressure} alt="" />
+        <span className="pressure-value">997hP</span>
+        <span className="pressure-name">Pressure</span>
       </div>
-      <div>
-      <img src={Uv} alt="" />
-        <span></span>
-        <span></span>
-      </div> */}
+      <div className="d-flex flex-column uv">
+      <img className="uv-img" src={Uv} alt="" />
+        <span className="uv-value" >8</span>
+        <span className="uv-name">UV</span>
+      </div>
     </div>
   );
 };
