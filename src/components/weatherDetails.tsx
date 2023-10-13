@@ -24,26 +24,33 @@ interface WeatherData {
 const WeatherDetails = () => {
   const [detail, setDetail] = useState<WeatherData | null>(null);
   const apiKey = "628820e4635eda8ed9787634489b3478";
-  const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid=${apiKey}`;
+  const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=28.5706333&lon=77.3272147&appid=${apiKey}`;
+
+  const kelvinToCelsius = (kelvin: number) => {
+    return (kelvin - 273.15).toFixed(2); // Conversion formula
+  }
 
   useEffect(() => {
     fetch(apiUrl)
       .then((res) => res.json())
       .then((data) => {
         setDetail(data);
+        console.log(data)
       })
       .catch((error) => {
         console.error("Error fetching weather data: ", error);
       });
   }, [apiUrl]);
 
+  const temperatureInCelsius = kelvinToCelsius(detail?.main?.temp || 0);
+  const feelsLikeInCelsius = kelvinToCelsius(detail?.main?.feels_like || 0);
 
   return (
     <div className="card weather-details">
-      <p className="degree">{detail?.main.temp}°C</p>
+      <p className="degree">{temperatureInCelsius}°C</p>
       <div className="d-flex">
         <span className="feels-like">Feels like:</span>
-        <span className="feels-like-degree">{detail?.main.feels_like}°C</span>
+        <span className="feels-like-degree">{feelsLikeInCelsius}°C</span>
       </div>
       <div className="d-flex Sunrise">
         <img className="img-sunrise" src={Sunrise} alt="" />
